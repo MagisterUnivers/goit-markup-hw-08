@@ -833,7 +833,10 @@ button .modal-label > .modal-comment-textarea::placeholder {
   |  What we are doing?
   |============================
 */
-/* .desc-box {} */
+.desc-box {
+  display: none;
+}
+
 .subject {
   font-family: "Roboto";
   font-style: normal;
@@ -854,13 +857,13 @@ button .modal-label > .modal-comment-textarea::placeholder {
           align-items: center;
   list-style: none;
 }
-.desc-box__listitem {
+.desc-box__list-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
 }
-.desc-box__listsubtext {
+.desc-box__list-subtext {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

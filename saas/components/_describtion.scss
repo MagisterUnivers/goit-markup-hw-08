@@ -4,7 +4,9 @@
   |============================
 */
 
-/* .desc-box {} */
+.desc-box {
+	display: none;
+}
 
 .subject {
 	font-family: 'Roboto';
@@ -22,12 +24,12 @@
 	align-items: center;
 	list-style: none;
 
-	&item {
+	&-item {
 		display: flex;
 		position: relative;
 	}
 
-	&subtext {
+	&-subtext {
 		display: flex;
 		font-family: 'Roboto';
 		font-size: 14px;
