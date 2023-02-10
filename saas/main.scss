@@ -8,6 +8,8 @@
 @import './base/reset';
 @import './base/common';
 @import './base/animations';
+@import './base/container';
+@import './base/section';
 
 //  components styles
 
@@ -15,18 +17,20 @@
 @import './components/btn';
 @import './components/checkbox';
 @import './components/clients';
-@import './components/contacts';
-@import './components/container';
 @import './components/describtion';
-@import './components/footer';
-@import './components/form';
+@import './components/forms/form';
 @import './components/gallery';
-@import './components/header';
 @import './components/hero';
-@import './components/logo';
-@import './components/modal';
-@import './components/nav';
-@import './components/section';
+@import './components/forms/modal';
 @import './components/socials';
 @import './components/subscribe';
 @import './components/teammembers';
+@import './components/hamburger';
+
+// layout styles
+
+@import './layout/contacts';
+@import './layout/footer';
+@import './layout/header';
+@import './layout/logo';
+@import './layout/nav';

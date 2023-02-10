@@ -18,22 +18,36 @@
 .subject.clients {
 	/* margin-top: 94px; */
 	margin-bottom: 50px;
+
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 28px;
+	line-height: calc(33 / 28);
 }
 
 .clients__list {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	list-style: none;
+	gap: 30px 30px;
 
 	/* border: 1px solid var(--iconborder-clients);
   border-radius: 4px; */
 	margin: 0px;
 	padding: 0px;
-	&item {
-		width: 170px;
+
+	&-item {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 210px;
 		height: 92px;
+		width: calc((100% - 30px) / 2);
 	}
-	&link {
+	&-link {
 		display: flex;
 		justify-content: center;
 		align-items: center;

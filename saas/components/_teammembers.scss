@@ -16,29 +16,29 @@
 	text-align: center;
 }
 
-.subject {
-	/* padding-top: 94px; */
-}
+// .subject {
+// 	/* padding-top: 94px; */
+// }
+
+// .userpic {
+// 	margin-bottom: 30px;
+// }
 
 .author__list {
 	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
 	align-items: center;
 	list-style: none;
 
-	&item {
-		box-shadow: 0px 5px 5px 0px rgb(0 0 0 / 30%);
-		border-radius: 4px;
-		overflow: hidden;
-	}
-
-	&content {
+	&-content {
 		padding-top: 30px;
 		padding-bottom: 30px;
 		margin: auto;
 		background-color: var(--headerbackground-color);
 	}
 
-	&title {
+	&-title {
 		font-family: 'Roboto';
 		font-size: 16px;
 		line-height: 1.18;
@@ -47,7 +47,7 @@
 		margin-bottom: 10px;
 	}
 
-	&text {
+	&-text {
 		font-family: 'Roboto';
 		font-size: 16px;
 		line-height: 1.18;
@@ -57,9 +57,15 @@
 	}
 }
 
-.author__list-item:not(:last-child) {
-	margin-right: 30px;
+.author__list-item {
+	box-shadow: 0px 5px 5px 0px rgb(0 0 0 / 30%);
+	border-radius: 4px;
+	// overflow: hidden;
 }
+
+// .author__list-item:not(:last-child) {
+// 	margin-right: 30px;
+// }
 
 // .author__list-item {
 // 	box-shadow: 0px 5px 5px 0px rgb(0 0 0 / 30%);
