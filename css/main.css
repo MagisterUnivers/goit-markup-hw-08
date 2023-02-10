@@ -1586,10 +1586,6 @@ button .modal-label > .modal-comment-textarea::placeholder {
   text-align: center;
 }
 
-.footer-address {
-  /* background-color: var(--footerbackground-color); */
-}
-
 .footer-address__list {
   margin-bottom: 60px;
   padding: 0;
