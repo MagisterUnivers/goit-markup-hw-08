@@ -1,0 +1,22 @@
+/**
+   |============================
+   |  Header
+   |============================
+ */
+
+.header {
+	border-bottom: 1px solid var(--borderheadertransparent-color);
+	/*  Moving Part */
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: var(--headerbackground-color);
+	z-index: 10;
+}
+
+.header__portfolio {
+	height: 80px;
+	padding: 16px 0;
+	border-bottom: 1px solid var(--borderheadertransparent-color);
+}

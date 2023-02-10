@@ -1,0 +1,50 @@
+/**
+  |============================
+  |  BG colors + Colors
+  |============================
+*/
+
+:root {
+	--primarytext-color: #212121;
+	--secondarytext-color: #757575;
+	--logo-color: #2196f3;
+	--background-color: #f5f5f500;
+	--headerbackground-color: #ffffff;
+	--footerbackground-color: #2f303a;
+	--headersecondlogopart-color: #000000;
+	--borderheadertransparent-color: #ececec;
+	--portfoliobg-color: #eeeeee;
+	--thethirdbgcolor: #f5f4fa;
+	--primary-btncolor: #188ce8;
+	--iconcolor-grey: #afb1b8;
+	--iconborder-clients: #afb1b8;
+	/* Buttons */
+	--button-active: #188ce8;
+	--backdrop-color: rgba(0, 0, 0, 0.2);
+	--projects-hover-color: rgba(33, 150, 243, 0.9);
+
+	/* For testing staff */
+	/* Volume 1 */
+
+	/* Text colors */
+	--primary-text-color: #212121;
+	--secondary-text-color: #757575;
+	--accent-color: #2196f3;
+	/* Background colors */
+	--primary-white-color: #ffffff;
+	--secondary-bg-color: #2f303a;
+	--third-bg-color: #f5f4fa;
+	--adress-list-color: rgba(255, 255, 255, 0.6);
+	--item-border-color: #eeeeee;
+	--logo-header-color: #000000;
+	--button-active: #188ce8;
+	--backdrop-color: rgba(0, 0, 0, 0.2);
+	--projects-hover-color: rgba(33, 150, 243, 0.9);
+	/* Icon colors */
+	--main-icon-color: #afb1b8;
+	--accent-icon-color: #ffffff;
+	/* Others */
+	--transition-fast: 250ms;
+	--transition-slow: 500ms;
+	--transition-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

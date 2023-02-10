@@ -1,0 +1,33 @@
+/**
+  |============================
+  |  Logo
+  |============================
+*/
+
+.logo {
+	font-family: 'Raleway';
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	color: var(--logo-color);
+	text-decoration: none;
+}
+
+.logo-primary {
+	color: var(--headersecondlogopart-color);
+}
+
+.logo__footer {
+	margin-bottom: 20px;
+	display: block;
+	color: var(--logo-color);
+	font-family: 'Raleway';
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	text-decoration: none;
+}
+
+.logo__secondary {
+	color: var(--headerbackground-color);
+}

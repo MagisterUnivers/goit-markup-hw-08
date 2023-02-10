@@ -1,0 +1,106 @@
+/**
+  |============================
+  |  Our benefits section
+  |============================
+*/
+
+.features {
+}
+
+.features__list {
+	display: flex;
+	text-align: center;
+	list-style: none;
+	&item {
+		width: 270px;
+	}
+}
+
+// .features__list-item {
+// 	width: 270px;
+// }
+
+.features__list-item:not(:last-child) {
+	margin-right: 30px;
+}
+
+.feature__list-title {
+	font-family: 'Roboto';
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	text-align: start;
+
+	&text {
+		font-family: 'Roboto';
+		font-size: 14px;
+		line-height: 1.71;
+		letter-spacing: 0.03em;
+		text-align: start;
+		color: var(--secondarytext-color);
+	}
+}
+
+// .feature__list-text {
+// 	font-family: 'Roboto';
+// 	font-size: 14px;
+// 	line-height: 1.71;
+// 	letter-spacing: 0.03em;
+// 	text-align: start;
+// 	color: var(--secondarytext-color);
+// }
+
+.benefits__icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 30px;
+
+	width: 270px;
+	height: 120px;
+
+	background-color: var(--thethirdbgcolor);
+	border-radius: 4px;
+}
+
+.benefits__icon-svg {
+	fill: var(--primarytext-color);
+}
+
+/**
+	|============================
+	|  Portfolio Page
+	|============================
+*/
+
+.benefits.section {
+	padding-top: 94px;
+}
+
+.benefits__gallery {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	/* padding-top: 94px; */
+	&gallery {
+		list-style: none;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 34px;
+	}
+}
+
+// .benefits__gallery-list {
+// 	list-style: none;
+// 	display: flex;
+// 	align-items: center;
+// 	justify-content: center;
+// 	margin-bottom: 34px;
+// }
+
+.benefits__gallery-item:not(:last-child) {
+	margin-right: 8px;
+}

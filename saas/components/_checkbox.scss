@@ -1,0 +1,56 @@
+/**
+  |============================
+  |  Checkbox
+  |============================
+*/
+
+.modal-label-checkbox {
+	display: flex;
+	gap: 8px;
+	margin-top: 20px;
+	padding: 0 12px;
+}
+
+.modal-checkbox {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: none;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+}
+
+.checkbox-custom {
+	height: 19px;
+	width: 19px;
+	border: 2px solid #000000;
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: background-color var(--transition-fast) var(--transition-function);
+	&icon {
+		fill: transparent;
+		transition: fill var(--transition-fast) var(--transition-function);
+	}
+}
+
+// .checkbox-icon {
+// 	fill: transparent;
+// 	transition: fill var(--transition-fast) var(--transition-function);
+// }
+
+.modal-checkbox:checked + .checkbox-custom {
+	background-color: var(--accent-color);
+	border-color: transparent;
+}
+
+.modal-checkbox:checked + .checkbox-custom > .checkbox-icon {
+	fill: var(--primary-white-color);
+}
+
+.user-agreement-link {
+	color: var(--accent-color);
+}

@@ -1,0 +1,32 @@
+/**
+  |============================
+  |  Animations
+  |============================
+*/
+
+@keyframes shadow-in {
+	0% {
+		background-color: transparent;
+	}
+
+	75% {
+		background-color: rgba(0, 0, 0, 0.2);
+	}
+}
+
+@keyframes shadow-out {
+	0% {
+		background-color: transparent;
+	}
+}
+
+.is-hidden {
+	opacity: 0;
+	pointer-events: none;
+	transform: translateX(100%);
+	animation: shadow-out 0.2s linear;
+}
+
+.is-show {
+	animation: shadow-in 1.25s linear;
+}
