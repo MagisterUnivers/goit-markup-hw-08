@@ -1,0 +1,26 @@
+/**
+  |============================
+  |  Mixins
+  |============================
+*/
+
+@mixin image-screen-resize($padding-bottom: 0%, $max-width: 0px) {
+	position: relative;
+	width: 100%;
+	max-width: $max-width;
+	padding-bottom: $padding-bottom;
+	z-index: 1;
+
+	img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		z-index: -1;
+
+		object-fit: cover;
+	}
+}

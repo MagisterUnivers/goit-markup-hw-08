@@ -13,10 +13,20 @@
 	right: 0;
 	background-color: var(--headerbackground-color);
 	z-index: 10;
+
+	transition: all 0.2s ease;
 }
 
 .header__portfolio {
 	height: 80px;
 	padding: 16px 0;
 	border-bottom: 1px solid var(--borderheadertransparent-color);
+}
+
+.header-hidden {
+	top: -100%;
+}
+
+.header-show {
+	top: 0;
 }

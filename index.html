@@ -32,7 +32,7 @@
 
 					<!-- Mobile menu -->
 
-					<button class="menu-toggle js-open-menu header__menu-btn">
+					<button class="header__btn-menu js-open-menu" type="button">
 						<svg class="header__menu-icon" width="40" height="40">
 							<use href="./images/icons/icons.svg#icon-menu_40px"></use>
 						</svg>
@@ -81,6 +81,7 @@
 		<main>
 			<!--  Секция Герой + кнопка "Заказать услугу" -->
 			<section class="hero section">
+				<img src="./images/Header img.jpg" alt="" />
 				<div class="container hero__box">
 					<h1 class="hero-box__title">
 						Ефективні рішення для <br />
@@ -729,19 +730,107 @@
 					</form>
 				</div>
 			</div>
+			<!--
+      |============================
+      | Mobile menu
+      |============================
+    -->
+			<div class="menu-container js-menu-container" id="mobile-menu">
+				<button
+					class="menu-toggle js-close-menu"
+					aria-label="Кнопка для закриття меню"
+				>
+					<svg class="menu-toggle__icon" width="40" height="40">
+						<use href="./images/icons/icons.svg#icon-close_40px"></use>
+					</svg>
+				</button>
+
+				<ul class="mobile-menu">
+					<li>
+						<a
+							class="mobile-menu__link mobile-menu__link--current link"
+							href="./index.html"
+							class="link"
+							>Студія</a
+						>
+					</li>
+					<li>
+						<a
+							class="mobile-menu__link link"
+							href="./portfolio.html"
+							class="link"
+							>Портфоліо</a
+						>
+					</li>
+					<li>
+						<a class="mobile-menu__link link" href="" class="link">Контакти</a>
+					</li>
+				</ul>
+				<ul class="contacts-mobile">
+					<li>
+						<a
+							class="contacts-mobile__link contacts-mobile__link--accent"
+							href="tel:+380961111111"
+							>+38 096 111 11 11</a
+						>
+					</li>
+					<li>
+						<a class="contacts-mobile__link" href="mailto:info@devstudio.com"
+							>info@devstudio.com</a
+						>
+					</li>
+					<ul class="socials-mobile">
+						<li>
+							<a
+								class="socials-mobile__link"
+								href="https://www.instagram.com/"
+								target="_blank"
+								rel="noopener noreferrer"
+								>Instagram</a
+							>
+						</li>
+						<li>
+							<a
+								class="socials-mobile__link"
+								href="https://twitter.com/"
+								target="_blank"
+								rel="noopener noreferrer"
+								>Twitter</a
+							>
+						</li>
+						<li>
+							<a
+								class="socials-mobile__link"
+								href="https://fb.com/"
+								target="_blank"
+								rel="noopener noreferrer"
+								>Facebook</a
+							>
+						</li>
+						<li>
+							<a
+								class="socials-mobile__link"
+								href="https://linkedin.com/"
+								target="_blank"
+								rel="noopener noreferrer"
+								>LinkedIn</a
+							>
+						</li>
+					</ul>
+				</ul>
+			</div>
 		</footer>
+
+		<!--  Js Scripts -->
+
 		<script
 			defer
 			src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
 			integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
 			crossorigin="anonymous"
 		></script>
-		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-		<script src="./js/header.js"></script>
+		<script src="./js/mobile-menu.js"></script>
 		<script src="./js/modal.js"></script>
-		<script src="./js/animation-on-scroll.js"></script>
-		<script defer src="./js/mobile-menu.js"></script>
-		<script src="./js/modal.js"></script>
+		<script src="./js/header-scroll.js"></script>
 	</body>
 </html>

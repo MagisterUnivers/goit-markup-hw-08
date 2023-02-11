@@ -212,6 +212,11 @@ summary {
   overflow: hidden;
 }
 
+/**
+  |============================
+  |  Mixins
+  |============================
+*/
 * {
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -262,7 +267,12 @@ body {
   color: var(--primarytext-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
-  padding-top: 0;
+  padding-top: 80px;
+}
+@media screen and (max-width: 767.98px) {
+  body {
+    padding-top: 60px;
+  }
 }
 
 .stepout {
@@ -732,28 +742,31 @@ button .modal-label > .modal-comment-textarea::placeholder {
   margin-left: 10px;
 }
 
-.header__menu-btn {
+.header__btn-menu {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  min-height: 40px;
+  min-width: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
-  padding: 0;
-  width: 40px;
-  height: 40px;
-  top: 10px;
-  right: 15px;
-  margin-left: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: none;
+  margin: 0;
+  padding: 0;
   background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
 }
-@media screen and (min-width: 767.98px) {
-  .header__menu-btn {
+@media screen and (min-width: 768px) {
+  .header__btn-menu {
     display: none;
   }
 }
@@ -861,7 +874,7 @@ button .modal-label > .modal-comment-textarea::placeholder {
       -ms-flex-pack: justify;
           justify-content: space-between;
   list-style: none;
-  gap: 30px;
+  gap: 30px 0;
   /* border: 1px solid var(--iconborder-clients);
    border-radius: 4px; */
   margin: 0px;
@@ -897,9 +910,9 @@ button .modal-label > .modal-comment-textarea::placeholder {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 210px;
+  width: 100%;
+  max-width: 46%;
   height: 92px;
-  width: calc((100% - 30px) / 2);
 }
 @media screen and (min-width: 767.98px) {
   .clients__list-item {
@@ -916,7 +929,7 @@ button .modal-label > .modal-comment-textarea::placeholder {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 210px;
+  width: 100%;
   height: 92px;
   border: 1px solid var(--iconborder-clients);
   border-radius: 4px;
@@ -1346,24 +1359,31 @@ button .modal-label > .modal-comment-textarea::placeholder {
   /* background-color: var(--footerbackground-color); */
   margin-bottom: 94px;
   padding-bottom: 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/Header\ img.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/Header\ img.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   min-width: 320px;
   max-width: 480px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0;
+  position: relative;
+  width: 100%;
+  max-width: 1600px;
+  padding-bottom: 20%;
+  z-index: 1;
+}
+.hero.section img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media screen and (min-width: 767.98px) {
   .hero.section {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/Header\ img\ tablet.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/Header\ img\ tablet.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     min-width: 480px;
     max-width: 768px;
     margin-left: auto;
@@ -1371,17 +1391,6 @@ button .modal-label > .modal-comment-textarea::placeholder {
     margin-bottom: 0px;
   }
 }
-@media screen and (min-width: 1199.98px) {
-  .hero.section {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/Hero\ photo\ 1.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/Hero\ photo\ 1.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    min-width: 1200px;
-  }
-}
-
 .hero__box {
   text-align: center;
   padding-top: 118px;
@@ -1454,6 +1463,166 @@ button .modal-label > .modal-comment-textarea::placeholder {
 .is-show {
   -webkit-animation: shadow-in 1.25s linear;
           animation: shadow-in 1.25s linear;
+}
+
+/**
+	|============================
+	|  Mobile Form
+	|============================
+*/
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@media (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+}
+.menu .link {
+  padding: 10px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-toggle:hover .menu-toggle__icon,
+.menu-toggle:focus .menu-toggle__icon {
+  fill: var(--accent-color);
+}
+
+.menu-container {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px;
+  background: var(--primary-white-color);
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  z-index: 999;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #fff;
+}
+
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mobile-menu__link {
+  display: block;
+  font-size: 40px;
+  padding: 10px;
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+
+.mobile-menu__link--current {
+  color: var(--accent-color);
+}
+
+.contacts-mobile__link {
+  display: block;
+  margin-bottom: 64px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.1666666667;
+  color: var(--secondary-text-color);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  list-style: none;
+}
+.contacts-mobile__link--accent {
+  font-size: 34px;
+  line-height: 1.1764705882;
+  color: var(--accent-color);
+  margin-bottom: 32px;
+}
+
+.socials-mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+  gap: 20px;
+}
+.socials-mobile__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2222222222;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.contacts-mobile {
+  list-style: none;
 }
 
 /**
@@ -2099,12 +2268,22 @@ button .modal-label > .modal-comment-textarea::placeholder {
   right: 0;
   background-color: var(--headerbackground-color);
   z-index: 10;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .header__portfolio {
   height: 80px;
   padding: 16px 0;
   border-bottom: 1px solid var(--borderheadertransparent-color);
+}
+
+.header-hidden {
+  top: -100%;
+}
+
+.header-show {
+  top: 0;
 }
 
 /**
