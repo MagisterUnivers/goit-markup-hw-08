@@ -347,6 +347,11 @@ body {
   padding-bottom: 94px;
 }
 
+.whatwedo {
+  padding-top: 0;
+  display: none;
+}
+
 /**
   |============================
   |  Our benefits section
@@ -422,6 +427,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 30px;
+  max-width: 450px;
   height: 120px;
   background-color: var(--thethirdbgcolor);
   border-radius: 4px;
