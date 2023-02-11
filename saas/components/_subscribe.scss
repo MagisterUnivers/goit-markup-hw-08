@@ -9,6 +9,14 @@
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
+
+	@media screen and (min-width: 767.98px) {
+		flex-direction: column;
+	}
+
+	@media screen and (min-width: 1199.98px) {
+		flex-direction: row;
+	}
 }
 
 /* Input field */
@@ -27,6 +35,16 @@
 	border-radius: 4px;
 
 	transition: border-color var(--transition-fast) var(--transition-function);
+
+	@media screen and (min-width: 767.98px) {
+		width: 450px;
+	}
+
+	@media screen and (min-width: 1199.98px) {
+		width: 358px;
+		margin-bottom: 0;
+		margin-right: 12px;
+	}
 }
 
 .subscribe-form-wrapper > .input-field:hover,

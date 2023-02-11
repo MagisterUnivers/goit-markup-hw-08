@@ -243,7 +243,11 @@ button .modal-label > .modal-comment-textarea::placeholder {
 	justify-content: center;
 	border: none;
 	background-color: transparent;
+
+	@media screen and (min-width: 767.98px) {
+		display: none;
+	}
 }
 
-.header__menu-icon {
-}
+// .header__menu-icon {
+// }

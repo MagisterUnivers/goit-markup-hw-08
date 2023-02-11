@@ -17,15 +17,20 @@
 		flex-wrap: wrap;
 	}
 
-	@media screen and (min-width: 479.98px) and (max-width: 767.98px) {
+	@media screen and (min-width: 767.98px) {
 		flex-direction: row;
 		flex-wrap: wrap;
 	}
 
 	&-item {
-		@media screen and (min-width: 480px) and (max-width: 767.98px) {
+		@media screen and (min-width: 767.98px) {
 			width: calc((100% - 30px) / 2);
 		}
+
+		@media screen and (min-width: 1199.98px) {
+			width: 270px;
+		}
+
 		// width: 270px;
 		// width: calc((100% - 30px) / 2);
 		// display: flex;

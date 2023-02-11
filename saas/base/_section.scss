@@ -5,10 +5,25 @@
 */
 
 .section {
-	padding-bottom: 94px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+
+	@media screen and (min-width: 767.98px) {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
+	@media screen and (min-width: 1199.98px) {
+		padding-top: 94px;
+		padding-bottom: 94px;
+	}
 }
 
 .whatwedo {
 	padding-top: 0;
 	display: none;
+
+	@media screen and (min-width: 1199.98px) {
+		display: flex;
+	}
 }

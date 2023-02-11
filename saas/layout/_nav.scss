@@ -6,6 +6,16 @@
 	padding-top: 16px;
 	padding-bottom: 16px;
 	margin-right: 15px;
+
+	@media screen and (min-width: 767.98px) {
+		padding-bottom: 0;
+		padding-top: 0;
+	}
+
+	@media screen and (min-width: 1199.98px) {
+		padding: 0;
+		padding-top: 0;
+	}
 }
 
 .site-nav__list {
@@ -13,6 +23,11 @@
 	list-style: none;
 	// display: flex;
 	gap: 50px;
+
+	@media screen and (min-width: 767.98px) {
+		display: flex;
+		margin-left: 87px;
+	}
 }
 
 .site-nav__list-link {

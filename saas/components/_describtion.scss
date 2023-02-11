@@ -4,9 +4,9 @@
   |============================
 */
 
-.desc-box {
-	display: none;
-}
+// .desc-box {
+
+// 	}
 
 .subject {
 	font-family: 'Roboto';
@@ -17,6 +17,11 @@
 	text-align: center;
 	letter-spacing: 0.03em;
 	margin-bottom: 50px;
+
+	@media screen and (min-width: 1199.98px) {
+		font-size: 36px;
+		line-height: calc(42 / 36);
+	}
 }
 
 .desc-box__list {
@@ -29,24 +34,24 @@
 		position: relative;
 	}
 
-	&-subtext {
-		display: flex;
-		font-family: 'Roboto';
-		font-size: 14px;
-		line-height: 1.14;
-		text-align: center;
-		width: 370px;
-		height: 70px;
-		letter-spacing: 0.03em;
-		text-transform: uppercase;
-		position: absolute;
-		/* top: 225px; */
-		bottom: 0px;
-		justify-content: center;
-		align-items: center;
-		color: var(--headerbackground-color);
-		background-color: rgba(47, 48, 58, 0.8);
-	}
+	// &-subtext {
+	// 	display: flex;
+	// 	font-family: 'Roboto';
+	// 	font-size: 14px;
+	// 	line-height: 1.14;
+	// 	text-align: center;
+	// 	width: 370px;
+	// 	height: 70px;
+	// 	letter-spacing: 0.03em;
+	// 	text-transform: uppercase;
+	// 	position: absolute;
+	// 	/* top: 225px; */
+	// 	bottom: 0px;
+	// 	justify-content: center;
+	// 	align-items: center;
+	// 	color: var(--headerbackground-color);
+	// 	background-color: rgba(47, 48, 58, 0.8);
+	// }
 }
 
 .desc-box__list-item:not(:last-child) {
@@ -58,21 +63,21 @@
 // 	position: relative;
 // }
 
-// .desc-box__subtext {
-// 	display: flex;
-// 	font-family: 'Roboto';
-// 	font-size: 14px;
-// 	line-height: 1.14;
-// 	text-align: center;
-// 	width: 370px;
-// 	height: 70px;
-// 	letter-spacing: 0.03em;
-// 	text-transform: uppercase;
-// 	position: absolute;
-// 	/* top: 225px; */
-// 	bottom: 0px;
-// 	justify-content: center;
-// 	align-items: center;
-// 	color: var(--headerbackground-color);
-// 	background-color: rgba(47, 48, 58, 0.8);
-// }
+.desc-box__subtext {
+	display: flex;
+	font-family: 'Roboto';
+	font-size: 14px;
+	line-height: 1.14;
+	text-align: center;
+	width: 370px;
+	height: 70px;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	position: absolute;
+	/* top: 225px; */
+	bottom: 0px;
+	justify-content: center;
+	align-items: center;
+	color: var(--headerbackground-color);
+	background-color: rgba(47, 48, 58, 0.8);
+}
