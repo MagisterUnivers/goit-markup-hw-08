@@ -5,11 +5,13 @@
 */
 
 .header-contacts {
+	display: none;
 	list-style: none;
-	display: flex;
+	// display: flex;
 }
 
 .header__box {
+	position: relative;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;

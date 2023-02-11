@@ -1,12 +1,17 @@
 .site-nav {
+	// position: relative;
 	display: flex;
 	align-items: center;
-	gap: 0 92px;
+	// gap: 0 92px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	margin-right: 15px;
 }
 
 .site-nav__list {
+	display: none;
 	list-style: none;
-	display: flex;
+	// display: flex;
 	gap: 50px;
 }
 
