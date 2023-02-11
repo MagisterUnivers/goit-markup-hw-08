@@ -1359,38 +1359,43 @@ button .modal-label > .modal-comment-textarea::placeholder {
   /* background-color: var(--footerbackground-color); */
   margin-bottom: 94px;
   padding-bottom: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/hero\ mobile\ @1x.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero\ mobile\ @1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   min-width: 320px;
-  max-width: 480px;
+  max-width: 768px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0;
-  position: relative;
-  width: 100%;
-  max-width: 1600px;
-  padding-bottom: 20%;
-  z-index: 1;
-}
-.hero.section img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 @media screen and (min-width: 767.98px) {
   .hero.section {
-    min-width: 480px;
-    max-width: 768px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/hero\ tablet\ @1x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero\ tablet\ @1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-width: 768px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0px;
   }
 }
+@media screen and (min-width: 767.98px) and (min-width: 1199.98px) {
+  .hero.section {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/Hero\ photo\ 1.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/Hero\ photo\ 1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-width: 1200px;
+    max-width: 1600px;
+  }
+}
+
 .hero__box {
   text-align: center;
   padding-top: 118px;
