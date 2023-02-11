@@ -1396,6 +1396,11 @@ button .modal-label > .modal-comment-textarea::placeholder {
   }
 }
 
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero.section {
+    background-image: url("/images/hero mobile @2x.jpg");
+  }
+}
 .hero__box {
   text-align: center;
   padding-top: 118px;
