@@ -374,6 +374,10 @@ body {
   }
 }
 
+.hero.section {
+  padding-top: 0;
+}
+
 .whatwedo {
   padding-top: 0;
   display: none;
@@ -1564,6 +1568,14 @@ button .modal-label > .modal-comment-textarea::placeholder {
 .is-show {
   -webkit-animation: shadow-in 1.25s linear;
           animation: shadow-in 1.25s linear;
+}
+
+.body-is-hidden {
+  overflow: hidden;
+}
+
+.body-is-show {
+  overflow: hidden;
 }
 
 /**

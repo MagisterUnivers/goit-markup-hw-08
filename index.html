@@ -20,7 +20,7 @@
 		/>
 		<link rel="stylesheet" href="./css/main.min.css" />
 	</head>
-	<body>
+	<body class="modal-data">
 		<!-- <header class="header"> -->
 		<!--  Хедер "Лого" + Навигация по сайту + Контактные данные -->
 		<header class="header">
@@ -32,7 +32,10 @@
 
 					<!-- Mobile menu -->
 
-					<button class="header__btn-menu js-open-menu" type="button">
+					<button
+						class="header__btn-menu js-open-menu open-data-modal"
+						type="button"
+					>
 						<svg class="header__menu-icon" width="40" height="40">
 							<use href="./images/icons/icons.svg#icon-menu_40px"></use>
 						</svg>
@@ -87,7 +90,11 @@
 						Ефективні рішення для <br />
 						вашого бізнесу
 					</h1>
-					<button data-modal-open type="button" class="hero-box__primary-btn">
+					<button
+						data-modal-open
+						type="button"
+						class="hero-box__primary-btn open-data-modal"
+					>
 						Замовити послугу
 					</button>
 				</div>
@@ -737,7 +744,7 @@
     -->
 			<div class="menu-container js-menu-container" id="mobile-menu">
 				<button
-					class="menu-toggle js-close-menu"
+					class="menu-toggle js-close-menu close-data-modal"
 					aria-label="Кнопка для закриття меню"
 				>
 					<svg class="menu-toggle__icon" width="40" height="40">
@@ -832,5 +839,6 @@
 		<script src="./js/mobile-menu.js"></script>
 		<script src="./js/modal.js"></script>
 		<script src="./js/header-scroll.js"></script>
+		<script src="./js/bodyhiding.js"></script>
 	</body>
 </html>
