@@ -204,5 +204,12 @@
 
 .contacts-mobile {
 	list-style: none;
-	margin-top: auto;
+	// margin-top: auto;
+}
+
+.modal-thumb {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
