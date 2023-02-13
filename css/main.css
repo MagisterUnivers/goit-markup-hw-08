@@ -1745,7 +1745,7 @@ button .modal-label > .modal-comment-textarea::placeholder {
 
 .contacts-mobile {
   list-style: none;
-  margin-top: auto;
+  margin-top: 0 auto;
 }
 
 /**
