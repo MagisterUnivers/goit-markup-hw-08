@@ -374,10 +374,6 @@ body {
   }
 }
 
-.hero.section {
-  padding-top: 0;
-}
-
 .whatwedo {
   padding-top: 0;
   display: none;
@@ -1466,7 +1462,8 @@ button .modal-label > .modal-comment-textarea::placeholder {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../images/hero-mobile@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-mobile@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-mobile@2x.jpg");
   }
 }
 @media screen and (min-width: 767.98px) {
@@ -1479,7 +1476,8 @@ button .modal-label > .modal-comment-textarea::placeholder {
 }
 @media screen and (min-width: 767.98px) and (min-device-pixel-ratio: 2), screen and (min-width: 767.98px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 767.98px) and (min-resolution: 192dpi), screen and (min-width: 767.98px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../images/hero-tablet@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-tablet@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-tablet@2x.jpg");
   }
 }
 @media screen and (min-width: 1199.98px) {
@@ -1492,7 +1490,8 @@ button .modal-label > .modal-comment-textarea::placeholder {
 }
 @media screen and (min-width: 1199.98px) and (min-device-pixel-ratio: 2), screen and (min-width: 1199.98px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1199.98px) and (min-resolution: 192dpi), screen and (min-width: 1199.98px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../images/hero-desktop@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-desktop@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-desktop@2x.jpg");
   }
 }
 
@@ -1505,19 +1504,22 @@ button .modal-label > .modal-comment-textarea::placeholder {
 
 .hero-box__title {
   font-family: "Roboto";
-  font-style: normal;
-  font-weight: 900;
   font-size: 26px;
   line-height: 1.6153846154;
+  margin-bottom: 30px;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--headerbackground-color);
+  max-width: 360px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 1199.98px) {
   .hero-box__title {
     font-size: 44px;
     line-height: 1.3636363636;
+    max-width: 696px;
   }
 }
 
@@ -1690,6 +1692,8 @@ button .modal-label > .modal-comment-textarea::placeholder {
 .mobile-menu__link {
   display: block;
   font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
   padding: 10px;
   color: var(--primary-text-color);
   text-decoration: none;
@@ -1711,7 +1715,7 @@ button .modal-label > .modal-comment-textarea::placeholder {
   list-style: none;
 }
 .contacts-mobile__link--accent {
-  font-size: 34px;
+  font-size: 24px;
   line-height: 1.1764705882;
   color: var(--accent-color);
   margin-bottom: 32px;
@@ -1949,23 +1953,6 @@ button .modal-label > .modal-comment-textarea::placeholder {
   text-align: center;
 }
 
-.userpic {
-  width: 450px;
-  height: 460px;
-}
-@media screen and (min-width: 767.98px) {
-  .userpic {
-    width: 354px;
-    height: 374px;
-  }
-}
-@media screen and (min-width: 1199.98px) {
-  .userpic {
-    width: 270px;
-    height: 260px;
-  }
-}
-
 .author__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2057,14 +2044,18 @@ button .modal-label > .modal-comment-textarea::placeholder {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding-right: 15px;
-    margin-left: 96px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1;
+            flex: 0 1;
   }
 }
 @media screen and (min-width: 1199.98px) {
   .header-contacts {
     padding: 0;
     gap: 30px;
+    -webkit-box-flex: inherit;
+        -ms-flex: inherit;
+            flex: inherit;
   }
 }
 

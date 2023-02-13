@@ -28,7 +28,11 @@
 		(-o-min-device-pixel-ratio: 2/1),
 		(min-resolution: 192dpi),
 		(min-resolution: 2dppx) {
-		background-image: url('../images/hero-mobile@2x.jpg');
+		background-image: linear-gradient(
+				rgba(47, 48, 58, 0.4),
+				rgba(47, 48, 58, 0.4)
+			),
+			url('../images/hero-mobile@2x.jpg');
 	}
 
 	@media screen and (min-width: 767.98px) {
@@ -45,7 +49,11 @@
 			(-o-min-device-pixel-ratio: 2/1),
 			(min-resolution: 192dpi),
 			(min-resolution: 2dppx) {
-			background-image: url('../images/hero-tablet@2x.jpg');
+			background-image: linear-gradient(
+					rgba(47, 48, 58, 0.4),
+					rgba(47, 48, 58, 0.4)
+				),
+				url('../images/hero-tablet@2x.jpg');
 		}
 	}
 
@@ -63,7 +71,11 @@
 			(-o-min-device-pixel-ratio: 2/1),
 			(min-resolution: 192dpi),
 			(min-resolution: 2dppx) {
-			background-image: url('../images/hero-desktop@2x.jpg');
+			background-image: linear-gradient(
+					rgba(47, 48, 58, 0.4),
+					rgba(47, 48, 58, 0.4)
+				),
+				url('../images/hero-desktop@2x.jpg');
 		}
 	}
 }
@@ -87,19 +99,21 @@
 
 .hero-box__title {
 	font-family: 'Roboto';
-	font-style: normal;
-	font-weight: 900;
 	font-size: 26px;
 	line-height: calc(42 / 26);
-
+	margin-bottom: 30px;
 	text-align: center;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
 	color: var(--headerbackground-color);
+	max-width: 360px;
+	margin: 0 auto;
+	margin-bottom: 30px;
 
 	@media screen and (min-width: 1199.98px) {
 		font-size: 44px;
 		line-height: calc(60 / 44);
+		max-width: 696px;
 	}
 }
 // font-family: 'Roboto';
