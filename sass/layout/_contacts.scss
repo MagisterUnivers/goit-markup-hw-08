@@ -80,31 +80,13 @@
 // 	color: var(--logo-color);
 // }
 
-.phone-icon {
-	margin-right: 10px;
-	fill: var(--secondarytext-color);
-	transition-property: fill;
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-	@media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
-		width: 10px;
-		height: 14px;
-		margin-right: 8px;
-	}
-}
+.phone-icon,
 .email-icon {
 	margin-right: 10px;
 	fill: var(--secondarytext-color);
 	transition-property: fill;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-	@media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
-		width: 14px;
-		height: 10px;
-		margin-right: 8px;
-	}
 }
 
 .header-contacts__item-link:hover .phone-icon,

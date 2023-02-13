@@ -2147,24 +2147,7 @@ button .modal-label > .modal-comment-textarea::placeholder {
   }
 }
 
-.phone-icon {
-  margin-right: 10px;
-  fill: var(--secondarytext-color);
-  -webkit-transition-property: fill;
-  transition-property: fill;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-@media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
-  .phone-icon {
-    width: 10px;
-    height: 14px;
-    margin-right: 8px;
-  }
-}
-
+.phone-icon,
 .email-icon {
   margin-right: 10px;
   fill: var(--secondarytext-color);
@@ -2174,13 +2157,6 @@ button .modal-label > .modal-comment-textarea::placeholder {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-@media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
-  .email-icon {
-    width: 14px;
-    height: 10px;
-    margin-right: 8px;
-  }
 }
 
 .header-contacts__item-link:hover .phone-icon,
