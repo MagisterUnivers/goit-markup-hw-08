@@ -162,15 +162,42 @@
 					<h2 class="subject">Чим ми займаємося</h2>
 					<ul class="desc-box__list">
 						<li class="desc-box__list-item">
-							<img src="./images/box1.jpg" alt="programming" />
+							<img
+								srcset="
+									./images/whatwedo/desktop-add@1x.jpg 1x,
+									./images/whatwedo/desktop-add@2x.jpg 2x
+								"
+								src="./images/whatwedo/desktop-add@1x.jpg"
+								alt="programming"
+								width="370"
+								height="294"
+							/>
 							<p class="desc-box__subtext">Десктопні додатки</p>
 						</li>
 						<li class="desc-box__list-item">
-							<img src="./images/box2.jpg" alt="frontend" />
+							<img
+								srcset="
+									./images/whatwedo/mobile-app@1x.jpg 1x,
+									./images/whatwedo/mobile-app@2x.jpg 2x
+								"
+								src="./images/whatwedo/mobile-app@1x.jpg"
+								alt="frontend"
+								width="370"
+								height="294"
+							/>
 							<p class="desc-box__subtext">Мобільні додатки</p>
 						</li>
 						<li class="desc-box__list-item">
-							<img src="./images/box3.jpg" alt="design" />
+							<img
+								srcset="
+									./images/whatwedo/desicion@1x.jpg 1x,
+									./images/whatwedo/desicion@2x.jpg 2x
+								"
+								src="./images/whatwedo/desicion@1x.jpg 1x"
+								alt="design"
+								width="370"
+								height="294"
+							/>
 							<p class="desc-box__subtext">Дизайнерські рішення</p>
 						</li>
 					</ul>
@@ -186,8 +213,19 @@
 						<li class="author__list-item">
 							<img
 								class="userpic"
-								src="./images/team1.jpg"
+								srcset="
+									./images/img-1_270.jpg 270w,
+									./images/img-1_354.jpg 354w,
+									./images/img-1_450.jpg 450w,
+									./images/img-1_540.jpg 540w,
+									./images/img-1_708.jpg 708w,
+									./images/img-1_900.jpg 900w
+								"
+								sizes="(min-width: 1199.98px) 270px, (min-width: 767.98px) 354px, (min-width: 479.98px) 450px, 100hv"
+								src="./images/img-1_450.jpg"
 								alt="Member photo 1"
+								width="450"
+								height="460"
 							/>
 							<div class="author__list-content">
 								<h3 class="author__list-title">Ігор Дем'яненко</h3>
@@ -252,8 +290,17 @@
 						</li>
 						<li class="author__list-item">
 							<img
+								srcset="
+									./images/img-2_270.jpg 270w,
+									./images/img-2_354.jpg 354w,
+									./images/img-2_450.jpg 450w,
+									./images/img-2_540.jpg 540w,
+									./images/img-2_708.jpg 708w,
+									./images/img-2_900.jpg 900w
+								"
+								sizes="(min-width: 1199.98px) 270px, (min-width: 767.98px) 354px, (min-width: 479.98px) 450px, 100hv"
 								class="userpic"
-								src="./images/team2.jpg"
+								src="./images/img-2_450.jpg"
 								alt="Member photo 2"
 							/>
 							<div class="author__list-content">
@@ -319,8 +366,17 @@
 						</li>
 						<li class="author__list-item">
 							<img
+								srcset="
+									./images/img-3_270.jpg 270w,
+									./images/img-3_354.jpg 354w,
+									./images/img-3_450.jpg 450w,
+									./images/img-3_540.jpg 540w,
+									./images/img-3_708.jpg 708w,
+									./images/img-3_900.jpg 900w
+								"
+								sizes="(min-width: 1199.98px) 270px, (min-width: 767.98px) 354px, (min-width: 479.98px) 450px, 100hv"
 								class="userpic"
-								src="./images/team3.jpg"
+								src="./images/img-3_450.jpg"
 								alt="Member photo 3"
 							/>
 							<div class="author__list-content">
@@ -387,7 +443,16 @@
 						<li class="author__list-item">
 							<img
 								class="userpic"
-								src="./images/team4.jpg"
+								srcset="
+									./images/img-4_270.jpg 270w,
+									./images/img-4_354.jpg 354w,
+									./images/img-4_450.jpg 450w,
+									./images/img-4_540.jpg 540w,
+									./images/img-4_708.jpg 708w,
+									./images/img-4_900.jpg 900w
+								"
+								sizes="(min-width: 1199.98px) 270px, (min-width: 767.98px) 354px, (min-width: 479.98px) 450px, 100hv"
+								src="./images/img-4_450.jpg"
 								alt="Member photo 4"
 							/>
 							<div class="author__list-content">
@@ -787,7 +852,7 @@
 						>
 					</li>
 					<ul class="socials-mobile">
-						<li>
+						<li class="socials-mobile__item">
 							<a
 								class="socials-mobile__link"
 								href="https://www.instagram.com/"
@@ -796,7 +861,7 @@
 								>Instagram</a
 							>
 						</li>
-						<li>
+						<li class="socials-mobile__item">
 							<a
 								class="socials-mobile__link"
 								href="https://twitter.com/"
@@ -805,7 +870,7 @@
 								>Twitter</a
 							>
 						</li>
-						<li>
+						<li class="socials-mobile__item">
 							<a
 								class="socials-mobile__link"
 								href="https://fb.com/"
@@ -814,7 +879,7 @@
 								>Facebook</a
 							>
 						</li>
-						<li>
+						<li class="socials-mobile__item">
 							<a
 								class="socials-mobile__link"
 								href="https://linkedin.com/"

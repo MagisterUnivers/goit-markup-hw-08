@@ -31,9 +31,20 @@
 // 	/* padding-top: 94px; */
 // }
 
-// .userpic {
-// 	margin-bottom: 30px;
-// }
+.userpic {
+	width: 450px;
+	height: 460px;
+
+	@media screen and (min-width: 767.98px) {
+		width: 354px;
+		height: 374px;
+	}
+
+	@media screen and (min-width: 1199.98px) {
+		width: 270px;
+		height: 260px;
+	}
+}
 
 .author__list {
 	display: flex;
