@@ -1097,7 +1097,7 @@ button .modal-label > .modal-comment-textarea::placeholder {
 .modal {
   padding: 40px;
   position: absolute;
-  width: 450px;
+  max-width: 450px;
   top: 50%;
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(-50%);
@@ -1113,7 +1113,7 @@ button .modal-label > .modal-comment-textarea::placeholder {
 }
 @media screen and (min-width: 1199.98px) {
   .modal {
-    width: 528px;
+    max-width: 528px;
   }
 }
 .modal-title {
@@ -1322,7 +1322,6 @@ button .modal-label > .modal-comment-textarea::placeholder {
 
 /* Hiding borders in IMG */
 .gallery-list__item-img {
-  min-width: 370px;
   left: -1px;
   top: -1px;
 }
@@ -1459,6 +1458,8 @@ button .modal-label > .modal-comment-textarea::placeholder {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0;
+  padding-top: 118px;
+  padding-bottom: 118px;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
@@ -1486,6 +1487,8 @@ button .modal-label > .modal-comment-textarea::placeholder {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/gallery/hero-desktop@1x.jpg");
     min-width: 1200px;
     max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 @media screen and (min-width: 1199.98px) and (min-device-pixel-ratio: 2), screen and (min-width: 1199.98px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1199.98px) and (min-resolution: 192dpi), screen and (min-width: 1199.98px) and (min-resolution: 2dppx) {
@@ -1497,8 +1500,6 @@ button .modal-label > .modal-comment-textarea::placeholder {
 
 .hero__box {
   text-align: center;
-  padding-top: 118px;
-  padding-bottom: 118px;
   margin: 0 auto;
 }
 
