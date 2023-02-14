@@ -22,6 +22,11 @@
 	transition: opacity 500ms ease var(--transition-slow),
 		transform 1000ms ease var(--transition-slow);
 
+	@media (max-width: 767px) {
+		max-width: 450px;
+		width: 90%;
+	}
+
 	@media screen and (min-width: 1199.98px) {
 		max-width: 528px;
 	}
